@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/LAS1819/mysql-node-connection/issues"
   },
-  "homepage": "https://github.com/LAS1819/mysql-node-connection#readme"
+  "homepage": "https://github.com/LAS1819/mysql-node-connection#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.2"
+  }
 }
