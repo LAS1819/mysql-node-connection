@@ -1,0 +1,24 @@
+{
+  "name": "mysql-node-connection",
+  "version": "1.0.0",
+  "description": "Curso se Node, Express y MySQL de Fazt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LAS1819/mysql-node-connection.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql"
+  ],
+  "author": "Lluís Aracil Sabater",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/LAS1819/mysql-node-connection/issues"
+  },
+  "homepage": "https://github.com/LAS1819/mysql-node-connection#readme"
+}
