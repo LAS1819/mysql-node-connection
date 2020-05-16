@@ -8,8 +8,28 @@
 </head>
 <body>
 	<nav class="navbar navbar-dark bg-dark">
-		<a href="#" class="navbar-brand">NEWS</a>
+		<a href="#" class="navbar-brand mx-auto">NEWS</a>
 	</nav>
 
+	<div class="row">
+		<div class="col-md-6 mt-4 text-center">
+			<table class="table table-striped">
+				<tr>
+					<th>ID</th>
+					<th>TITLE</th>
+					<th>NEWS</th>
+				</tr>
+				 <!-- De esta manera decimos que queremos ver el valor de news -->
+				<% for(var i = 0; i < news.length; i++) { %>
+					<tr>
+						<td><%= news[i].id_news %></td>
+						<td><%= news[i].title %></td>
+						<td><%= news[i].news %></td>
+					</tr>
+				<% } %>
+			</table>
+		</div>
+	</div>
+	
 </body>
 </html>
