@@ -16,4 +16,17 @@ module.exports = app => {
 		});
 		
 	});
+
+	// Recibimos la petición port con la ruta de news
+	// Lo manejamos con una función de ES6
+	app.post('/news', (req, res ) => {
+		const { title, news } = req.body;
+		connection.query('INSERT INTO news SET?', {
+			title,
+			news
+		}, (err, result) => {
+			res.redirect('/');
+		});
+
+	});
 }

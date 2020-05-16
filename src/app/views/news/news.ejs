@@ -11,7 +11,8 @@
 		<a href="#" class="navbar-brand mx-auto">NEWS</a>
 	</nav>
 
-	<div class="row">
+	<div class="container">
+		<div class="row">
 		<div class="col-md-6 mt-4 text-center">
 			<table class="table table-striped">
 				<tr>
@@ -20,7 +21,9 @@
 					<th>NEWS</th>
 				</tr>
 				 <!-- De esta manera decimos que queremos ver el valor de news -->
+				 <!-- Recorremos la tabla desde 0 hasta el final -->
 				<% for(var i = 0; i < news.length; i++) { %>
+					<!-- Añadimos cada dato en en cada líena -->
 					<tr>
 						<td><%= news[i].id_news %></td>
 						<td><%= news[i].title %></td>
@@ -29,7 +32,27 @@
 				<% } %>
 			</table>
 		</div>
+
+		<!-- Añadimos un card en el otro lado de la pantalla -->
+		<div class="col-md-6 mt-4 card">
+			<!-- El formulario apunta a la ruta del servidor -->
+			<form action="/news" method="post" class="card-body">
+				<h3 class="card-title">AGREGA UNA NOTICIA</h3>
+				<div class=form-group>
+					<input id="title" type="text" name="title" class="form-control" placeholder="Título">
+				</div>
+				<div class=form-group>
+					<input type="text" name="news" class="form-control" placeholder="Contenido">
+				</div>
+				<input type="submit" class="btn btn-primary">
+			</form>
+		</div>
+	</div>
 	</div>
 	
+	<script type="text/javascript">
+		document.getElementById('title').focus();
+	</script>
+
 </body>
 </html>
